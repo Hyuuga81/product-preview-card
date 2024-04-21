@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background: #F2EAE2;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    width: 91.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container {
+    width: 85.9%;
+}
+
+/* HERO */
+
+.hero {
+    width: 100%;
+    background: url('../images/image-product-mobile.jpg') center no-repeat;
+    background-size: cover;
+
+}
+
+.hero p {
+    margin: 111px 0;
+}
+
+
+/* AD */
+
+.ad {
+    background: #fff;
+    padding: 24px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ad h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #6C7289;
+    font-size: 0.75em;
+    line-height: 15px;
+    letter-spacing: 5px;
+    margin-bottom: 12px;
+}
+
+.ad h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+    line-height: 32px;
+    margin-bottom: 12px;
+}
+
+.ad p {
+    font-size: .875em;
+    font-weight: 500;
+    line-height: 23px;
+    color: #6C7289;
+    margin-bottom: 24px;
+}
+
+/* PRICES */
+
+.prices {
+    width: 66%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+}
+
+.prices .sale {
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    line-height: 32px;
+    color: #3D8168;
+}
+
+.prices .original {
+    font-size: 0.8125em;
+    font-weight: 500;
+    line-height: 23px;
+    color: #6C7289;
+    text-decoration: line-through;
+}
+
+.container button {
+    width: 100%;
+    padding: 15px 0;
+    background: #3D8168;
+    color: #fff;
+    font-size: 0.875em;
+    border-radius: 8px;
+}
+
+.foot {
+    font-size: 0.7em;
+}
+
+
+/* TABLET STYLES */
+@media (min-width: 768px) {
+    main {
+        max-width: 600px;
+        align-items: stretch;
+    }
+
+    .container {
+        width: 78.7%;
+    }
+
+    .hero,
+    .ad {
+        width: 50%;
+    }
+
+    .hero {
+        background: url('../images/image-product-desktop.jpg') center no-repeat;
+        background-size: cover;
+    }
+
+    .hero p {
+        margin: 215px 0;
+    }
+
+    .ad {
+        padding: 32px 0;
+    }
+
+    .ad h1 {
+        margin-bottom: 20px;
+    }
+
+    .ad h2 {
+        margin-bottom: 24px;
+    }
+
+    .ad p {
+        margin-bottom: 29px;
+    }
+
+    .prices {
+        width: 82.2%;
+        margin-bottom: 30px;
+    }
+}
